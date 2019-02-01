@@ -26,10 +26,10 @@ Liste des packages utilisés:
 
 ## Lancer les tests
 
-Pour lancer les tests vous pouvez utiliser le binaire disponible dans `vendor/bin/phpunit` en précisant le chemin vers le dossier de test.
+Pour lancer les tests vous pouvez utiliser le binaire disponible dans `vendor/bin/phpunit`.
 
 ```sh
-./vendor/bin/phpunit tests
+./vendor/bin/phpunit
 ```
 
 Ici l'intégralité de nos fichiers de tests présents dans le dossier `tests` seront exécutés.
