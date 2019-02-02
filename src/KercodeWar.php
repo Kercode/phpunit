@@ -1,13 +1,12 @@
 <?php
 
-use Symfony\Component\Yaml\Yaml;
+use \Symfony\Component\Yaml\Yaml;
 
 class KercodeWar {
-
   public static function weekday($number, $lang='en')
   {
     if ($lang !== 'fr') { $lang = 'en'; }
-    $content = Yaml::parse(file_get_contents("locales/{$lang}.yml"));
+    $content = Yaml::parse(file_get_contents("./locales/{$lang}.yml"));
 
     if ($number >= 1 && $number <= 7) {
       return $content['weekdays']['days'][$number - 1];
